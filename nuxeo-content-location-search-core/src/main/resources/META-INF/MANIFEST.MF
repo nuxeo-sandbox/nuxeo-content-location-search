@@ -6,3 +6,6 @@ Bundle-Version: 1.0.0
 Bundle-Name: nuxeo-content-location-core
 Bundle-ManifestVersion: 2
 Bundle-SymbolicName: com.nuxeo.sandbox.contentlocation.core.nuxeo-content-location-core;singleton=true
+Nuxeo-Component: OSGI-INF/elasticsearch-contrib.xml
+
+

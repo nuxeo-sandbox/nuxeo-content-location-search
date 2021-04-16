@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<component name="contentlocation.core.es">
+
+    <require>org.nuxeo.elasticsearch.ElasticSearchComponent.contrib</require>
+    <extension target="org.nuxeo.elasticsearch.ElasticSearchComponent" point="elasticSearchDocWriter">
+        <writer class="contentlocation.core.es.ContentESDocumentWriter" />
+    </extension>
+
+</component>

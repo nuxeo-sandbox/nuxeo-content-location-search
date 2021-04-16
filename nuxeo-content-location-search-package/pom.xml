@@ -1,50 +1,50 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>com.nuxeo.sandbox.contentlocation</groupId>
-    <artifactId>nuxeo-content-location-parent</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <relativePath>../pom.xml</relativePath>
-  </parent>
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.nuxeo.sandbox.contentlocation</groupId>
+		<artifactId>nuxeo-content-location-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
 
-<!--  <packaging>zip</packaging>-->
-  <artifactId>nuxeo-content-location-search-package</artifactId>
-  <name>Nuxeo content location search package - Nuxeo content location package</name>
+	<artifactId>nuxeo-content-location-search-package</artifactId>
+<!--	<packaging>zip</packaging>-->
+	<name>Nuxeo content location search package - Nuxeo content location package</name>
 
-  <dependencies>
-    <!-- Base distribution(s) for the MP -->
-    <dependency>
-      <groupId>org.nuxeo.ecm.distribution</groupId>
-      <artifactId>nuxeo-nxr-server</artifactId>
-      <type>zip</type>
-      <scope>provided</scope>
-    </dependency>
+	<dependencies>
+		<!-- Base distribution(s) for the MP -->
+		<dependency>
+			<groupId>org.nuxeo.ecm.distribution</groupId>
+			<artifactId>nuxeo-nxr-server</artifactId>
+			<type>zip</type>
+			<scope>provided</scope>
+		</dependency>
 
-    <!-- Additional bundles to be deployed by the MP -->
-    <dependency>
-      <groupId>com.nuxeo.sandbox.contentlocation</groupId>
-      <artifactId>nuxeo-content-location-core</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>nuxeo-studio</groupId>
-      <artifactId>jaldama-SANDBOX</artifactId>
-      <version>enhanced-searching-SNAPSHOT</version>
-    </dependency>
-  </dependencies>
+		<!-- Additional bundles to be deployed by the MP -->
+		<dependency>
+			<groupId>com.nuxeo.sandbox.contentlocation</groupId>
+			<artifactId>nuxeo-content-location-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>nuxeo-studio</groupId>
+			<artifactId>jaldama-SANDBOX</artifactId>
+			<version>enhanced-searching-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.nuxeo.build</groupId>
-        <artifactId>ant-assembly-maven-plugin</artifactId>
-        <configuration>
-          <buildFiles>
-            <buildFile>${basedir}/src/main/assemble/assembly.xml</buildFile>
-          </buildFiles>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.nuxeo.build</groupId>
+				<artifactId>ant-assembly-maven-plugin</artifactId>
+				<configuration>
+					<buildFiles>
+						<buildFile>${basedir}/src/main/assemble/assembly.xml</buildFile>
+					</buildFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 
 </project>

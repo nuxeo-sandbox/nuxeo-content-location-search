@@ -1,7 +1,4 @@
-<?xml version="1.0"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="http://maven.apache.org/POM/4.0.0"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.nuxeo.sandbox.contentlocation</groupId>
@@ -12,12 +9,121 @@
   <name>Nuxeo content location core</name>
   <description>Enhanced Search for Finding Documents via Parent Location core</description>
 
-  <dependencies>
+	<dependencies>
+		<dependency>
+			<groupId>nuxeo-studio</groupId>
+			<artifactId>jaldama-SANDBOX</artifactId>
+			<version>enhanced-searching-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.ecm.automation</groupId>
+			<artifactId>nuxeo-automation-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.ecm.automation</groupId>
+			<artifactId>nuxeo-automation-features</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.ecm.core</groupId>
+			<artifactId>nuxeo-core-event</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.runtime</groupId>
+			<artifactId>nuxeo-runtime</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.ecm.core</groupId>
+			<artifactId>nuxeo-core-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.ecm.platform</groupId>
+			<artifactId>nuxeo-platform-video-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.elasticsearch</groupId>
+			<artifactId>nuxeo-elasticsearch-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.ecm.routing</groupId>
+			<artifactId>nuxeo-routing-core</artifactId>
+		</dependency>
     <dependency>
-      <groupId>nuxeo-studio</groupId>
-      <artifactId>jaldama-SANDBOX</artifactId>
-      <version>enhanced-searching-SNAPSHOT</version>
+      <groupId>org.nuxeo.ecm.platform</groupId>
+      <artifactId>nuxeo-platform-imaging-api</artifactId>
     </dependency>
-  </dependencies>
+
+		<!-- Scope Test -->
+		<dependency>
+			<groupId>org.nuxeo.runtime</groupId>
+			<artifactId>nuxeo-runtime-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.ecm.platform</groupId>
+			<artifactId>nuxeo-platform-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.runtime</groupId>
+			<artifactId>nuxeo-runtime-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.ecm.platform</groupId>
+			<artifactId>nuxeo-features-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.ecm.automation</groupId>
+			<artifactId>nuxeo-automation-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.ecm.platform</groupId>
+			<artifactId>nuxeo-rest-api-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.ecm.platform</groupId>
+			<artifactId>nuxeo-platform-tag-core</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.ecm.platform</groupId>
+			<artifactId>nuxeo-platform-url-core</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.ecm.platform</groupId>
+			<artifactId>nuxeo-platform-audit-core</artifactId>
+			<type>test-jar</type>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.ecm.platform</groupId>
+			<artifactId>nuxeo-platform-default-config</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.ecm.routing</groupId>
+			<artifactId>nuxeo-routing-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.elasticsearch</groupId>
+			<artifactId>nuxeo-elasticsearch-core</artifactId>
+			<type>test-jar</type>
+			<scope>test</scope>
+		</dependency>
+    <dependency>
+      <groupId>org.nuxeo.ecm.platform</groupId>
+      <artifactId>nuxeo-platform-comment-core</artifactId>
+      <scope>test</scope>
+    </dependency>
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+		</dependency>
+	</dependencies>
 
 </project>
